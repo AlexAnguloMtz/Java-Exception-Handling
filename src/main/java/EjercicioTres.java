@@ -11,10 +11,10 @@ public class EjercicioTres {
             return;
         }
         final int entero = sc.nextInt();
-        if(entero <= 0) {
+        if(entero < 0) {
             throw new NumeroNegativoException
                     (format("Error! El numero %d es negativo", entero));
         }
-        System.out.printf("Bien, el numero %d es positivo. Programa terminado.", entero);
+        System.out.printf("La raiz cuadrada de %d es %f", entero, Math.sqrt(entero));
     }
 }
